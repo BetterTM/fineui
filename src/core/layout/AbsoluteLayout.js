@@ -4,6 +4,7 @@ import React, {
 import cn from 'classnames'
 import Layout from './Layout'
 import './AbsoluteLayout.less'
+import FillLayout from './fill/FillLayout';
 
 class AbsoluteLayout extends Component {
     constructor(props, context) {
@@ -25,7 +26,7 @@ class Item extends Component {
 
     render() {
         const {children, style, left, right, top, bottom, ...props} = this.props;
-        return <Layout style={{
+        return <FillLayout style={{
             position: 'absolute',
             left,
             right,
@@ -34,7 +35,7 @@ class Item extends Component {
             ...style
         }} {...props}>
             {children}
-        </Layout>
+        </FillLayout>
     }
 }
 AbsoluteLayout.Item = Item;

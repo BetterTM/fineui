@@ -3,11 +3,11 @@
 .flex-vertical-adapt-layout {
     .display-flex();
 
-    .direction-horizontal();
+    .direction-vertical();
 
     .justify-content(flex-start);
 
-    .align-items(center);
+    .align-items(flex-start);
 
     .flex-wrap();
 
@@ -19,6 +19,10 @@
         &.layout-full-item {
             .flex-grow();
         }
+    }
+
+    &._stretch {
+        .align-items(stretch);
     }
 
     &._left {

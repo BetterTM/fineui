@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom'
 import cn from 'classnames'
 import Layout from '../Layout'
 import './HtapeLayout.less'
+import FillLayout from '../fill/FillLayout';
 
 const CLASS_NAME = 'flex-horizontal-tape-layout'
 const VERTICAL_ALIGN = {
@@ -40,8 +41,8 @@ class Item extends Component {
 
     render() {
         const {children, width, className, height,...props} = this.props;
-        return <Layout width={width}
-                       className={cn('layout-item', {'layout-full-item': !width}, className)} {...props}>{children}</Layout>
+        return <FillLayout width={width}
+                       className={cn('layout-item', {'layout-full-item': !width}, className)} {...props}>{children}</FillLayout>
     }
 }
 HorizontalTapeLayout.Item = Item

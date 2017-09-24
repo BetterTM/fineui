@@ -50,7 +50,7 @@ export default class DownListPopup extends Component {
         }
         return (
             <HorizontalLayout scrollx={false} width={200} height={22} style={styleObj} onMouseOver={this.handleMouseOver} onMouseLeave={this.handleMouseLeave} className={CLASS_NAME}>
-                <Label className='layout-bg2' width={200}>father</Label>
+                <Label className='bg2' width={200}>father</Label>
                 <Layout style={sty1} width={200}>{this.props.children}</Layout>
             </HorizontalLayout>
         )

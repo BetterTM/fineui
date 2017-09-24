@@ -55,16 +55,16 @@ export default class DownList extends Component {
                 <DownListPopup>
                     <DownListPopup>
                         <DownListPopup>
-                            <Label className='layout-bg3' width={200}>child</Label>
-                            <Label className='layout-bg3' width={200}>child</Label>
-                            <Label className='layout-bg3' width={200}>child</Label>
+                            <Label className='bg3' width={200}>child</Label>
+                            <Label className='bg3' width={200}>child</Label>
+                            <Label className='bg3' width={200}>child</Label>
                         </DownListPopup>
                     </DownListPopup>
                 </DownListPopup>
                 <DownListPopup>
                     <DownListPopup>
-                        <Label className='layout-bg3' width={200}>child</Label>
-                        <Label className='layout-bg3' width={200}>child</Label>
+                        <Label className='bg3' width={200}>child</Label>
+                        <Label className='bg3' width={200}>child</Label>
                     </DownListPopup>
                 </DownListPopup>
             </VerticalLayout>
@@ -73,4 +73,4 @@ export default class DownList extends Component {
 }
 
 
-{/* <Label className='layout-bg3' width={200}>child</Label><Label className='layout-bg3' width={200}>child</Label> */ }
+{/* <Label className='bg3' width={200}>child</Label><Label className='bg3' width={200}>child</Label> */ }

@@ -1,14 +1,10 @@
 @import "../index";
+
 .flex-fill-layout {
-	.display-flex();
+    .display-flex();
     .align-items(stretch);
-	> * {
-		.flex-grow();
-	}
-    .justify-content(center);
-    &.layout-wrapper {
-        min-width: 100%;
-        min-height: 100%;
-        float: left;
+    .justify-content(stretch);
+    > * {
+        .flex-grow();
     }
 }
