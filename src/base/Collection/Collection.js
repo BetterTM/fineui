@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import CollectionView from './CollectionView'
 import calculateSizeAndPositionData from './utils/calculateSizeAndPositionData'
 import getUpdatedOffsetForIndex from './utils/getUpdatedOffsetForIndex'
+import { AbsoluteLayout } from '../../core/layout'
 
 class Collection extends PureComponent {
 
@@ -161,7 +162,7 @@ function defaultCellGroupRenderer({
             }
 
             return (
-                <div
+                <AbsoluteLayout
                     key={index}
                     style={{
                         position: 'absolute',
@@ -171,8 +172,10 @@ function defaultCellGroupRenderer({
                         width: cellMetadata.width
                     }}
                 >
-                    {renderedCell}
-                </div>
+                    <AbsoluteLayout.Item left={0} top={0} right={0} bottom={0}>
+                        {renderedCell}
+                    </AbsoluteLayout.Item>
+                </AbsoluteLayout>
             )
         })
         .filter((renderedCell) => !!renderedCell)
