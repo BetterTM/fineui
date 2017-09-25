@@ -172,7 +172,12 @@ class ResizableTable extends PureComponent {
                         </AbsoluteLayout.Item>
             </AbsoluteLayout>
         }
-        return headerCellRenderer({columnIndex, rowIndex, width, height, top, left, ...props}, ...others);
+        return <AbsoluteLayout
+                    style={{width, height}}>
+                    <AbsoluteLayout.Item left={0} top={0} right={0} bottom={0}>
+                        {headerCellRenderer({columnIndex, rowIndex, width, height, top, left, ...props}, ...others)}
+                    </AbsoluteLayout.Item>
+                </AbsoluteLayout>
     }
 
     _onColumnResizerMouseDown({columnIndex, rowIndex, offsetLeftGetter}, event) {
