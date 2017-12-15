@@ -1,27 +1,27 @@
-import React, { Component } from 'react'
-import Label from '../../src/base/single/label'
-import { VerticalAdaptLayout, VerticalLayout } from '../../src/core/layout'
+import React, {Component} from 'react'
+import VerticalAdaptLayout from "../../src/core/layout/adapt/VerticalAdaptLayout";
+import CenterLayout from "../../src/core/layout/center/CenterLayout";
 
 export default class VerticalAdaptLayoutDemo extends Component {
-  render() {
-    return (
-      <VerticalAdaptLayout>
-        <VerticalAdaptLayout.Item>
-          <Label className='layout-bg1' height={ 30 } width={ 150 }>自适应垂直 1</Label>
-        </VerticalAdaptLayout.Item>
-        <VerticalAdaptLayout.Item>
-          <Label className='layout-bg2' height={ 30 } width={ 150 }>自适应垂直 2</Label>
-        </VerticalAdaptLayout.Item>
-        <VerticalAdaptLayout.Item>
-          <Label className='layout-bg3' height={ 30 } width={ 150 }>自适应垂直 3</Label>
-        </VerticalAdaptLayout.Item>
-        <VerticalAdaptLayout.Item>
-          <Label className='layout-bg4' height={ 30 } width={ 150 }>自适应垂直 4</Label>
-        </VerticalAdaptLayout.Item>
-        <VerticalAdaptLayout.Item>
-          <Label className='layout-bg5' height={ 30 } width={ 150 }>自适应垂直 5</Label>
-        </VerticalAdaptLayout.Item>
-      </VerticalAdaptLayout>
-      );
-  }
+    render() {
+        return (
+            <VerticalAdaptLayout>
+                <VerticalAdaptLayout.Item height={ 30 }>
+                    <CenterLayout className='bg1'>垂直自适应 1</CenterLayout>
+                </VerticalAdaptLayout.Item>
+                <VerticalAdaptLayout.Item height={ 30 }>
+                    <CenterLayout className='bg2'>垂直自适应 2</CenterLayout>
+                </VerticalAdaptLayout.Item>
+                <VerticalAdaptLayout.Item height={ 30 }>
+                    <CenterLayout className='bg3'>垂直自适应 3</CenterLayout>
+                </VerticalAdaptLayout.Item>
+                <VerticalAdaptLayout.Item height={ 30 }>
+                    <CenterLayout className='bg4'>垂直自适应 4</CenterLayout>
+                </VerticalAdaptLayout.Item>
+                <VerticalAdaptLayout.Item>
+                    <CenterLayout className='bg5'>垂直自适应 5</CenterLayout>
+                </VerticalAdaptLayout.Item>
+            </VerticalAdaptLayout>
+        );
+    }
 }

@@ -89,7 +89,7 @@ export default class TipsDemo extends Component {
 						>
 							toast success
 						</Button>
-						<Label width={200} className="layout-bg2" textAlign="left">
+						<Label width={200} className="bg2" textAlign="left">
 							家卡拉蜂
 						</Label>
 						<Button

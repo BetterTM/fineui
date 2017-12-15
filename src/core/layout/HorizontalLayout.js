@@ -27,8 +27,8 @@ class HorizontalLayout extends Component {
     render() {
         const {children, verticalAlign, className, ...props} = this.props;
         return <Layout
-            className={cn((props.scrollx || props.scrolly) ? 'clearfix' : cn(CLASS_NAME, verticalAlign), className)} {...props}>
-            {(props.scrollx || props.scrolly) ?
+            className={cn((props.scrollable || props.scrollx || props.scrolly) ? 'clearfix' : cn(CLASS_NAME, verticalAlign), className)} {...props}>
+            {(props.scrollable || props.scrollx || props.scrolly) ?
                 <div
                     className={cn(CLASS_NAME, 'layout-wrapper', verticalAlign)}>{children}</div> : children}
         </Layout>

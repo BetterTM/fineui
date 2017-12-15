@@ -21,7 +21,7 @@ class VerticalAdaptLayout extends Component {
 
     static defaultProps = {
         scrolly: true,
-        horizontalAlign: HORIZONTAL_ALIGN.STRETCH
+        horizontalAlign: HORIZONTAL_ALIGN.LEFT
     }
 
     render() {
